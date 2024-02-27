@@ -1,4 +1,4 @@
-const url = "http://freeminds.no/wp-json/wc/store/products";
+const url = "https://freeminds.no/wp-json/wc/store/products";
 const productsContainer = document.querySelector(".Products");
 
 async function makeApiCall() {

@@ -6,7 +6,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = "http://freeminds.no/wp-json/wc/store/products/" + id;
+const url = "https://freeminds.no/wp-json/wc/store/products/" + id;
 
 async function fetchGames() {
   try {
