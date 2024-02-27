@@ -1,0 +1,7 @@
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
+RewriteRule ^wp-json/.* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+RewriteRule ^index\.php$ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+
+const apiKey = 'ck_03fbee330196cfd01aea9dccae26ee3340800232';
+const apiSecret = 'cs_5d0bc86a23559cf1f5df8347db851e7bbf582323';
+const base64Encoded = btoa(apiKey + ':' + apiSecret);
