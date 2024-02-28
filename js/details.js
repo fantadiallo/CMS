@@ -22,12 +22,16 @@ async function fetchGames() {
 
 fetchGames();
 
-function createHTML(beads) {
+function createHTML(product) {
+
+  const thumbnailUrl = product.images.length > 0 ? product.images[0].src : 'placeholder.jpg'; // Assuming 'placeholder.jpg' as default if no image available
+
   detailContainer.innerHTML = `
-  <div class="details">
-          <h2 class="title">${beads.name}</h2>
-          <p>${beads.description}</p>
-          <div class="shorty">${beads.short_description}</div>
-          <p class="price">${beads.price_html} </p>
-        </div>`;
+    <div class="details">
+      <img src="${thumbnailUrl}" alt="${product.name}" class="thumbnail">
+      <h2 class="title">${product.name}</h2>
+      <p>${product.description}</p>
+      <div class="shorty">${product.short_description}</div>
+      <p class="price">${product.price_html} </p>
+    </div>`;
 }

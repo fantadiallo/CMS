@@ -17,6 +17,7 @@ async function makeApiCall() {
         <a href="productdetails.html?id=${beads.id}" class="card">
           <h2 class="title">${beads.name}</h2>
          <p>${beads.description}</p>
+         
           <p class="price">${beads.price_html}</p>
         </a>`;
     });
