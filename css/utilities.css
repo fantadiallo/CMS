@@ -15,16 +15,17 @@ header{
 a,p{
   color: white;
 }
-h1 {
+h1{
 padding: 20px;
 text-align: center;
+}
+h2{
+  font-size: 27px;
 }
 .title {
   padding: 10px;
 }
-.price {
-  color: rgba(0, 76, 255, 0.984);
-}
+
 
 img {
   max-width: 100%;
@@ -64,12 +65,18 @@ img {
   padding: 20px;
 }
 .price{
-max-width: 100px;
-padding: 10px;
+max-width: 150px;
 background-color: black;
 border-radius: 6px;
-font-size: 23px;
+font-size: 16px;
+padding: 10px;
+cursor: pointer;
 
+}
+.descriptiont{
+  padding: 5px;
+  font-size: 16px;
+  max-width: 500px;
 }
 .shorty {
 max-width: 600px;
